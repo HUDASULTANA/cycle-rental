@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: rgb(85, 4, 111);
+            border-radius: 30px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color: rgb(228, 95, 199)
+        }
+        
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+        nav{ margin-top:-1020px;
+        WIDTH:100PX;}
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/homepage.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/aboutus.html">About</a></li>
+                <li><a href="http://127.0.0.1:5500/CONTACT.HTML">Contact us</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+    
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+        }
+        body{
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgb(244, 236, 244);
+        }
+        .slide-container{
+          max-width: 1120px;
+          width: 100%;
+          padding: 40px 0;
+          
+        }
+        .slide-content{
+          margin: 0 40px;
+          overflow: hidden;
+          border-radius: 25px;
+          
+        }
+        .card{
+          border-radius: 25px;
+          background-color: rgb(173, 236, 243);
+          
+        }
+        .image-content,
+        .card-content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 14px;
+          
+        }
+        .image-content{
+          position: relative;
+          row-gap: 5px;
+          padding: 25px 0px;
+          
+        }
+        .overlay{
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          background-color: #f8c7f2;
+          border-radius: 25px 25px 0 25px;
+        }
+        .overlay::before,
+        .overlay::after{
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: -40px;
+          height: 40px;
+          width: 40px;
+          background-color: #f8c7f2;
+        }
+        .overlay::after{
+          border-radius: 0 25px 0 0;
+          background-color:rgb(173, 236, 243);
+        }
+        .card-image{
+          position: relative;
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+          background: #FFF;
+          padding: 3px;
+        }
+        .card-image .card-img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius:50%;
+          border: 4px solid  rgb(173, 236, 243);
+        }
+        .name{
+          font-size: 18px;
+          font-weight: 500;
+          color: #333;
+        }
+        .description{
+          font-size: 14px;
+          color: #707070;
+          text-align: center;
+        }
+         li{
+            color: #707070;
+            font-size: 14px;
+            list-style: none;}
+    li:not(:last-child){margin-bottom: 15px;}
+             li:before{
+                content:"\2764";
+                color:#dd59c3;
+                margin-right:7px;
+            
+             }
+            .button{
+          border: none;
+          font-size: 16px;
+          color: #FFF;
+          padding: 8px 16px;
+          background-color: #f8c7f2;;
+          border-radius: 6px;
+          margin: 14px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        .button:hover{
+          background: #f66cda;
+        }
+         </style>
+     </head>
+    <body>
+        <div class="slide-container swiper">
+          <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper">
+    <div class="card swiper-slide">
+      <div class="image-content">
+      <span class="overlay"></span>
+
+      <div class="card-image">
+      <img src="cycle1.jpeg" alt="" class="card-img">
+      </div>
+     </div>
+
+     <div class="card-content">
+    <h2 class="name">MODEL 1</h2>
+    <p class="description"><ul> 
+     <li>RENTAL DURATION::3AM-4PM</li>
+     <li>WEEKLY::SAT-SUN</li>
+     <li> COMPANY-HERO</li>
+    </ul></p>
+
+     <button class="button" onclick="location.href='http://127.0.0.1:5500/interested1.html'">INTERESTED</button>
+     </div>
+     </div>
+     <div class="card swiper-slide">
+     <div class="image-content">
+    <span class="overlay"></span>
+
+ <div class="card-image">
+ <img src="cycle2.jpeg" alt="" class="card-img">
+</div>
+  </div>
+
+ <div class="card-content">
+ <h2 class="name">MODEL 2</h2>
+    <p class="description"><ul> 
+        <li>RENTAL DURATION::3AM-4PM</li>
+    <li>WEEKLY::SAT-SUN</li>
+     <li>COMPANY-LADY BUG</li>
+     </ul></p>
+
+     <button class="button" onclick="location.href='http://127.0.0.1:5500/interested2.html'">INTERESTED</button>
+    </div>
+    </div>
+     <div class="card swiper-slide">
+    <div class="image-content">
+     <span class="overlay"></span>
+     <div class="card-image">
+    <img src="cycle3.jpeg" alt="" class="card-img">
+    </div>
+    </div>
+    <div class="card-content">
+    <h2 class="name">MODEL 3</h2>
+   <p class="description"><ul> 
+    <li>RENTAL DURATION::3AM-4PM</li>
+    <li>WEEKLY::SAT-SUN</li>
+    <li>COMPANY-HERCULES</li>
+    </ul></p>
+
+    <button class="button" onclick="location.href='http://127.0.0.1:5500/interested3.html'">INTERESTED</button>
+    </div>
+    </div>
+    <div class="card swiper-slide">
+    <div class="image-content">
+    <span class="overlay"></span>
+
+    <div class="card-image">
+    <img src="cycle4.jpeg" alt="" class="card-img">
+    </div>
+    </div>
+
+    <div class="card-content">
+    <h2 class="name">MODEL 4</h2>
+    <p class="description"><ul> 
+    <li>RENTAL DURATION::3AM-4PM</li>
+     <li>WEEKLY::SAT-SUN</li>
+     <li>COMPANY-ATLAS</li>
+   </ul></p>
+
+   <button class="button" onclick="location.href='http://127.0.0.1:5500/interested4.html'">INTERESTED</button>
+    </div>
+    </div>
+    <div class="card swiper-slide">
+    <div class="image-content">
+    <span class="overlay"></span>
+
+    <div class="card-image">
+    <img src="cycle5.jpeg" alt="" class="card-img">
+    </div>
+   </div>
+
+    <div class="card-content">
+    <h2 class="name">MODEL 5</h2>
+    <p class="description"><ul> 
+    <li>RENTAL DURATION::3AM-4PM</li>
+    <li>WEEKLY::SAT-SUN</li>
+    <li>COMPANY-HERCULES</li>
+    </ul></p>
+
+    <button class="button" onclick="location.href='http://127.0.0.1:5500/interested5.html'">INTERESTED</button>
+</div>
+        
+    </body>
+    </html>
